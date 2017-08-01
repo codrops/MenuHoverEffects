@@ -1,0 +1,50 @@
+.menu--tsula {
+	font-family: 'Space Mono', monospace;
+}
+
+.menu--tsula .menu__item {
+	padding-left: 0.25em;
+}
+
+.menu--tsula .menu__item-name {
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #5a5bd3;
+}
+
+.menu--tsula .menu__item:hover .menu__item-name,
+.menu--tsula .menu__item:focus .menu__item-name {
+	color: #222328;
+	background: #5a5bd3;
+}
+
+.menu--tsula .menu__item::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 0.9em;
+	height: 1em;
+	opacity: 0;
+	background: rgba(90,91,211,0.3);
+	animation: none; /* For Chrome */
+}
+
+.menu--tsula .menu__item-label {
+	margin: 0;
+	color: #999caa;
+}
+
+.menu--tsula .menu__item:hover::before,
+.menu--tsula .menu__item:focus::before {
+	animation: blinkblink 0.4s cubic-bezier(0.5,0,1,1) infinite alternate;
+}
+
+@keyframes blinkblink {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

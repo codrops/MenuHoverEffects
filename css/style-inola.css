@@ -1,0 +1,72 @@
+.menu--inola {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu--inola .menu__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.25em 0;
+	text-align: center;
+}
+
+.menu--inola .menu__item:last-child {
+	margin-bottom: 0;
+}
+
+.menu--inola .menu__item-name {
+	font-family: 'Fanwood Text', serif;
+	font-size: 2.25em;
+	padding: 0 0.25em;
+	color: #fff;
+}
+
+.menu--inola .menu__item-name::before {
+	content: '';
+	position: absolute;
+	top: calc(50% - 2px);
+	left: 0;
+	width: 100%;
+	height: 4px;
+	pointer-events: none;
+	background: currentColor;
+	transform: scale3d(0,1,1);
+	transform-origin: 100% 50%;
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.8,0,0.2,1);
+}
+
+.menu--inola .menu__item:hover .menu__item-name::before,
+.menu--inola .menu__item:focus .menu__item-name::before {
+	transform: scale3d(1,1,1);
+	transform-origin: 0% 50%;
+}
+
+.menu--inola .menu__item-label {
+	font-size: 0.85em;
+	margin-top: 0.5em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--color-link);
+}
+
+.menu--inola .menu__item-label::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-background);
+	transform-origin: 100% 50%;
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.8,0,0.2,1);
+}
+
+.menu--inola .menu__item:hover .menu__item-label::after,
+.menu--inola .menu__item:focus .menu__item-label::after {
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+}

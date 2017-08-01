@@ -1,0 +1,52 @@
+.menu--yona {
+	font-family: 'Alegreya Sans', monospace;
+	font-size: 1.15em;
+}
+
+.menu--yona .menu__item {
+	font-size: 1.5em;
+	font-weight: 900;
+	margin: 1.25em 0;
+	padding-left: 0.25em;
+}
+
+.menu--yona .menu__item-name {
+	color: #000;
+	transition: transform 0.3s;
+}
+
+.menu--yona .menu__item:hover .menu__item-name,
+.menu--yona .menu__item:focus .menu__item-name {
+	transform: translate3d(0.5em,0,0);
+}
+
+.menu--yona .menu__item::before {
+	content: '';
+	position: absolute;
+	top: 0.5em;
+	left: 0;
+	width: 0.75em;
+	height: 0.25em;
+	background: #000;
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 0.3s;
+}
+
+.menu--yona .menu__item:hover::before,
+.menu--yona .menu__item:focus::before {
+	transform: scale3d(1,1,1);
+}
+
+.menu--yona .menu__item-label {
+	display: block;
+	margin: 0;
+	word-spacing: 0.15em;
+	color: #fff;
+}
+
+@media screen and (max-width: 50em) {
+	.menu--yona .menu__item-label {
+		font-size: 0.85em;
+	}
+}
