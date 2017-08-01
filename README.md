@@ -2,7 +2,7 @@
 
 Some inspiration for menu hover effects.
 
-![Menu Hover Effects]()
+![Menu Hover Effects](https://tympanus.net/codrops/wp-content/uploads/2017/08/MenuStyles_Featured.jpg)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=31887)
 
