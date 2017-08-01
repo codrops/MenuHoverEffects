@@ -42,7 +42,7 @@
 	content: '';
 	position: absolute;
 	z-index: -1;
-	top: 1.25em;
+	top: calc(100% + 0.1em);
 	left: 0.05em;
 	width: 25%;
 	height: 1px;
