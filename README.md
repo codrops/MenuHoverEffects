@@ -1,4 +1,4 @@
-# Menu Hover Effects
+# Menu Hover Effects - An Amazing Project
 
 Some inspiration for menu hover effects.
 
